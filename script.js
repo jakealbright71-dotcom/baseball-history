@@ -4,17 +4,17 @@ const questions = [
     {
         question: "Who wrote the first standardized baseball rules in 1845?",
         options: ["Alexander Cartwright", "Abner Doubleday", "Babe Ruth", "Henry Chadwick"],
-        correct: 0
+        correct: 1
     },
     {
         question: "Which was the first professional baseball team?",
         options: ["New York Yankees", "Boston Red Sox", "Cincinnati Red Stockings", "Chicago Cubs"],
-        correct: 2
+        correct: 3
     },
     {
         question: "Who broke the color barrier in MLB in 1947?",
         options: ["Willie Mays", "Jackie Robinson", "Hank Aaron", "Satchel Paige"],
-        correct: 1
+        correct: 2
     }
 ];
 
