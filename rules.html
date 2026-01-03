@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Rules & Gameplay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⚾ Baseball Learning</a>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-landmark"></i> USA History</a>
+                <a href="latin-america.html"><i class="fas fa-globe-americas"></i> Latin America</a>
+                <a href="rules.html" class="active"><i class="fas fa-baseball-ball"></i> Rules & Gameplay</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Baseball Rules & How to Play</h1>
+            <p class="hero-subtitle">Learn the game step by step</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="rules-section">
+            <h2><i class="fas fa-list-ol"></i> Basic Rules of Baseball</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-number">1</div>
+                    <h3>Teams & Players</h3>
+                    <p>Two teams of 9 players each take turns batting and fielding.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">2</div>
+                    <h3>Innings</h3>
+                    <p>A game has 9 innings. Each team bats once per inning.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">3</div>
+                    <h3>Scoring Runs</h3>
+                    <p>Score by hitting the ball and running around all 4 bases.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">4</div>
+                    <h3>Strikes & Balls</h3>
+                    <p>3 strikes = out. 4 balls = walk to first base.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">5</div>
+                    <h3>Outs</h3>
+                    <p>3 outs ends a team's batting turn.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">6</div>
+                    <h3>Winning</h3>
+                    <p>The team with most runs after 9 innings wins.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="positions-section">
+            <h2><i class="fas fa-baseball-ball"></i> Field Positions</h2>
+            <div class="baseball-field">
+                <div class="field-container">
+                    <div class="position pitcher" onclick="showPositionInfo('Pitcher')">P</div>
+                    <div class="position catcher" onclick="showPositionInfo('Catcher')">C</div>
+                    <div class="position first" onclick="showPositionInfo('First Base')">1B</div>
+                    <div class="position second" onclick="showPositionInfo('Second Base')">2B</div>
+                    <div class="position third" onclick="showPositionInfo('Third Base')">3B</div>
+                    <div class="position shortstop" onclick="showPositionInfo('Shortstop')">SS</div>
+                    <div class="position left" onclick="showPositionInfo('Left Field')">LF</div>
+                    <div class="position center" onclick="showPositionInfo('Center Field')">CF</div>
+                    <div class="position right" onclick="showPositionInfo('Right Field')">RF</div>
+                </div>
+                <div class="position-info" id="position-info">
+                    <h3>Click on a position to learn more!</h3>
+                    <p>Each position has special responsibilities in the game.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps-section">
+            <h2><i class="fas fa-play-circle"></i> How to Play - Step by Step</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <div class="step-content">
+                        <h4>Pitching</h4>
+                        <p>The pitcher throws the ball toward home plate where the batter stands.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <div class="step-content">
+                        <h4>Batting</h4>
+                        <p>The batter tries to hit the ball into the field of play.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <div class="step-content">
+                        <h4>Running</h4>
+                        <p>If the ball is hit, the batter runs toward first base.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <div class="step-content">
+                        <h4>Fielding</h4>
+                        <p>Defensive players try to catch the ball or tag runners out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2><i class="fas fa-gamepad"></i> Rules Quiz</h2>
+            <div class="quiz-box">
+                <div class="quiz-question" id="quiz-question-rules">How many strikes make an out in baseball?</div>
+                <div class="quiz-options">
+                    <button class="quiz-option" onclick="checkAnswerRules(this, 'wrong')">2</button>
+                    <button class="quiz-option" onclick="checkAnswerRules(this, 'correct')">3</button>
+                    <button class="quiz-option" onclick="checkAnswerRules(this, 'wrong')">4</button>
+                    <button class="quiz-option" onclick="checkAnswerRules(this, 'wrong')">5</button>
+                </div>
+                <div class="quiz-feedback" id="quiz-feedback-rules"></div>
+            </div>
+        </section>
+
+        <section class="references-section">
+            <h2><i class="fas fa-bookmark"></i> References & Learning Resources</h2>
+            <div class="references-box">
+                <h3>Official Rules & Guides:</h3>
+                <ul>
+                    <li>Major League Baseball. (2023). <em>Official Baseball Rules: 2023 Edition</em>.</li>
+                    <li>USA Baseball. (2023). <em>Youth Baseball Coaching Guide</em>.</li>
+                </ul>
+                
+                <h3>Image Credits:</h3>
+                <ul>
+                    <li>All images: Pexels License (Free for educational use)</li>
+                </ul>
+                
+                <div class="copyright-notice">
+                    <p><strong>Copyright Compliance:</strong> All educational materials properly attributed. Fair use for classroom educational purposes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Baseball Learning Project</h3>
+                <p>For students aged 12-14 | Final Assignment</p>
+            </div>
+            <div class="footer-section">
+                <h3>Interactive Features</h3>
+                <a href="#timeline">Timeline</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#glossary">Glossary</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Educational Baseball Project | Foreign Language Department</p>
+            <p class="teacher-note">Teacher feedback: Share with Bilingual Coordinator for input</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
