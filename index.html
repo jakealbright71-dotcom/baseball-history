@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball History - USA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⚾ Baseball Learning</a>
+            <div class="nav-links">
+                <a href="index.html" class="active"><i class="fas fa-landmark"></i> USA History</a>
+                <a href="latin-america.html"><i class="fas fa-globe-americas"></i> Latin America</a>
+                <a href="rules.html"><i class="fas fa-baseball-ball"></i> Rules & Gameplay</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Baseball History in the USA</h1>
+            <p class="hero-subtitle">From sandlots to stadiums: America's pastime through the ages</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <div class="content-with-image">
+                <div class="text-content">
+                    <h2><i class="fas fa-flag-usa"></i> Origins of Baseball</h2>
+                    <p>Baseball evolved from older bat-and-ball games like rounders and cricket in the mid-19th century. While Abner Doubleday was once credited, historians now recognize Alexander Cartwright as a key figure in establishing modern rules.</p>
+                    
+                    <h3><i class="fas fa-star"></i> Key Moments in U.S. Baseball</h3>
+                    <ul class="feature-list">
+                        <li><strong>1845</strong> - Knickerbocker Rules established in New York</li>
+                        <li><strong>1869</strong> - First professional team: Cincinnati Red Stockings</li>
+                        <li><strong>1903</strong> - First World Series: Boston vs Pittsburgh</li>
+                        <li><strong>1947</strong> - Jackie Robinson breaks color barrier</li>
+                        <li><strong>1973</strong> - Designated hitter rule introduced</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.pexels.com/photos/2280369/pexels-photo-2280369.jpeg" alt="Historic baseball field" class="content-image">
+                    <p class="image-caption">Baseball field | Photo by Pixabay from Pexels</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2><i class="fas fa-history"></i> Baseball History Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1839</div>
+                    <div class="timeline-content">
+                        <h4>Early Forms</h4>
+                        <p>Baseball-like games played in rural America</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1845</div>
+                    <div class="timeline-content">
+                        <h4>First Rules</h4>
+                        <p>Knickerbocker Rules written in New York</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1869</div>
+                    <div class="timeline-content">
+                        <h4>First Pro Team</h4>
+                        <p>Cincinnati Red Stockings formed</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1903</div>
+                    <div class="timeline-content">
+                        <h4>First World Series</h4>
+                        <p>Boston Americans win first championship</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1947</div>
+                    <div class="timeline-content">
+                        <h4>Integration</h4>
+                        <p>Jackie Robinson joins Brooklyn Dodgers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2><i class="fas fa-question-circle"></i> Quick Knowledge Check</h2>
+            <div class="quiz-box">
+                <div class="quiz-question" id="quiz-question">Who wrote the first standardized baseball rules in 1845?</div>
+                <div class="quiz-options">
+                    <button class="quiz-option" onclick="checkAnswer(this, 'correct')">Alexander Cartwright</button>
+                    <button class="quiz-option" onclick="checkAnswer(this, 'wrong')">Abner Doubleday</button>
+                    <button class="quiz-option" onclick="checkAnswer(this, 'wrong')">Babe Ruth</button>
+                    <button class="quiz-option" onclick="checkAnswer(this, 'wrong')">Henry Chadwick</button>
+                </div>
+                <div class="quiz-feedback" id="quiz-feedback"></div>
+                <button class="quiz-next" onclick="nextQuestion()">Next Question <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="glossary-section">
+            <h2><i class="fas fa-book-open"></i> Baseball Vocabulary</h2>
+            <div class="glossary-grid">
+                <div class="glossary-card">
+                    <h4>Diamond</h4>
+                    <p>The four bases arranged in a square shape that players run around.</p>
+                </div>
+                <div class="glossary-card">
+                    <h4>Inning</h4>
+                    <p>A period of play where both teams have a turn at batting.</p>
+                </div>
+                <div class="glossary-card">
+                    <h4>Home Run</h4>
+                    <p>When a batter hits the ball and circles all bases to score.</p>
+                </div>
+                <div class="glossary-card">
+                    <h4>Pitcher</h4>
+                    <p>The player who throws the baseball toward the batter.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="references-section">
+            <h2><i class="fas fa-bookmark"></i> References & Sources</h2>
+            <div class="references-box">
+                <h3>Academic Sources:</h3>
+                <ul>
+                    <li>National Baseball Hall of Fame. (2023). <em>Baseball History Timeline</em>. Cooperstown, NY.</li>
+                    <li>Rader, B. G. (2008). <em>Baseball: A History of America's Game</em>. University of Illinois Press.</li>
+                    <li>Historical data sourced from MLB Official Records</li>
+                </ul>
+                
+                <h3>Image Credits:</h3>
+                <ul>
+                    <li>Baseball field image: Photo by Pixabay from Pexels (Free to use)</li>
+                    <li>All images used under Pexels License for educational purposes</li>
+                </ul>
+                
+                <div class="copyright-notice">
+                    <p><strong>Copyright Compliance:</strong> This educational website complies with copyright law under Fair Use Doctrine for classroom educational purposes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Baseball Learning Project</h3>
+                <p>Educational website for students aged 12-14</p>
+                <p>Final Assignment - Foreign Language Department</p>
+            </div>
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <a href="index.html">USA History</a>
+                <a href="latin-america.html">Latin America</a>
+                <a href="rules.html">Rules & Gameplay</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Baseball History Educational Project. All rights reserved. | Created for educational purposes</p>
+            <p class="student-tag">Designed for students aged 12-14 | Teacher Feedback Welcomed</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
