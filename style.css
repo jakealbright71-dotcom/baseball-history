@@ -199,6 +199,51 @@ body.rules-page .hero {
     border-radius: 5px;
 }
 
+/* Image Placeholder Style */
+.image-placeholder {
+    background: linear-gradient(135deg, #002244, #005A9C);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    transition: all 0.3s ease;
+    border: 3px solid #C41E3A;
+}
+
+.image-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #005A9C, #002244);
+}
+
+.image-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.image-placeholder p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    background: rgba(196,30,58,0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.image-placeholder small {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 .feature-list {
     list-style: none;
     margin: 1.5rem 0;
